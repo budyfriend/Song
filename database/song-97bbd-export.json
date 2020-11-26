@@ -1,0 +1,39 @@
+{
+  "login" : {
+    "admin" : {
+      "level" : "admin",
+      "password" : "123",
+      "username" : "admin"
+    },
+    "budyfriend_code" : {
+      "level" : "user",
+      "password" : "123",
+      "username" : "budyfriend_code"
+    }
+  },
+  "song" : {
+    "-MN4D76xSDBIGvyEdytB" : {
+      "description" : "Genre : -",
+      "img" : "https://firebasestorage.googleapis.com/v0/b/song-97bbd.appspot.com/o/song%2F-MN4D76xSDBIGvyEdytB?alt=media&token=d82e7289-8636-44ef-8a11-1465ff317355",
+      "raiting" : 1,
+      "title" : "Black"
+    },
+    "-MN4DECItHTda_S49fSv" : {
+      "description" : "Genre : -",
+      "img" : "https://firebasestorage.googleapis.com/v0/b/song-97bbd.appspot.com/o/song%2F-MN4DECItHTda_S49fSv?alt=media&token=10a49e69-270e-484a-9d4e-3c64498084ab",
+      "raiting" : 0,
+      "title" : "Misterius"
+    }
+  },
+  "user" : {
+    "budyfriend_code" : {
+      "alamat" : "Serang",
+      "jk" : "Laki-laki",
+      "no_hp" : "085156980712",
+      "tanggal_buat" : "26-November-2020",
+      "tanggal_lahir" : "26-November-2020",
+      "username" : "budyfriend_code",
+      "vote" : true
+    }
+  }
+}

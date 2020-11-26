@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1006209760915",
+    "firebase_url": "https://song-97bbd.firebaseio.com",
+    "project_id": "song-97bbd",
+    "storage_bucket": "song-97bbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006209760915:android:a9c090e5bd604747789766",
+        "android_client_info": {
+          "package_name": "com.budyfriend_code.song"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006209760915-78uicuk0ieddutuu69hhk86eaitgqbfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.budyfriend_code.song",
+            "certificate_hash": "6a7c0b47bb22d33bd82f750a9268099240af875c"
+          }
+        },
+        {
+          "client_id": "1006209760915-sci0bj3lvgg6i8pc8n12sbb0iqq9ufdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHQhSVF9m4_Keqc020Ba-3NSpdlwJKc3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006209760915-sci0bj3lvgg6i8pc8n12sbb0iqq9ufdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
