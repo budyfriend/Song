@@ -10,12 +10,15 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +27,7 @@ import android.widget.Toast;
 
 import com.budyfriend_code.song.adapter.AdapterItem;
 import com.budyfriend_code.song.model.dataSong;
+import com.budyfriend_code.song.session.preferences;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -231,5 +235,35 @@ public class AdminActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.keluar, menu);
+        MenuItem item = menu.findItem(R.id.logout);
+        item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(context);
+                alert.setMessage("Apa kamu yakin ingin keluar?")
+                        .setPositiveButton("YA", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                preferences.clearData(context);
+                                startActivity(new Intent(context,LoginActivity.class));
+                                finish();
+                            }
+                        }).setNegativeButton("TIDAK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).show();
+
+                return true;
+            }
+        });
+
+        return true;
     }
 }
